@@ -1,17 +1,14 @@
 {
   "name": "deepspeech-nodejs_wav",
-  "version": "1.0.0",
-  "description": "Simple audio processing",
+  "version": "2.0.0",
+  "description": "deepspeech transcription of wav files",
   "main": "index.js",
   "scripts": {
     "start": "node ./index.js"
   },
   "dependencies": {
-    "argparse": "^1.0.10",
-    "deepspeech": "0.7.0",
-    "node-wav": "0.0.2",
-    "sox-stream": "^2.0.3",
-    "util": "^0.11.1"
+    "deepspeech": "0.7.4",
+    "wav": "^1.0.2"
   },
   "license": "Public domain"
 }

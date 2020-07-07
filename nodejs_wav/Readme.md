@@ -1,23 +1,17 @@
-# NodeJS voice recognition example using Mozilla DeepSpeech
+# NodeJS DeepSpeech Example
 
-Download the pre-trained model (1.8GB):
+This example loads .wav audio files and transcribes them to the console.
 
-```
-wget https://github.com/mozilla/DeepSpeech/releases/download/v0.7.0/deepspeech-0.7.0-models.pbmm
-wget https://github.com/mozilla/DeepSpeech/releases/download/v0.7.0/deepspeech-0.7.0-models.scorer
-```
+## Install
 
-Edit references to models path if necessary:
+Download the pre-trained model (1.4GB):
 
 ```
-let modelPath = './models/deepspeech-0.7.0-models.pbmm';
-let scorerPath = './models/deepspeech-0.7.0-models.scorer';
-```
-
-Install Sox (for .wav file loading):
-
-```
-brew install sox
+mkdir models
+cd models
+wget https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.pbmm
+wget https://github.com/mozilla/DeepSpeech/releases/download/v0.7.4/deepspeech-0.7.4-models.scorer
+cd ..
 ```
 
 Download test audio files:
@@ -33,16 +27,15 @@ Install NPM dependencies:
 npm install
 ```
 
-Run:
+## Run
 
 ```
 node index.js
 ```
 
-Result should be something like:
+Result should be:
 
 ```
-audio length 1.975
 result: experience proves this
 
 ```
@@ -54,4 +47,3 @@ node index.js audio/2830-3980-0043.wav
 node index.js audio/8455-210777-0068.wav
 node index.js audio/4507-16021-0012.wav
 ```
-

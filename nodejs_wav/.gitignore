@@ -1,0 +1,9 @@
+/node_modules
+/audio
+/models
+models
+*.pbmm
+*.scorer
+.DS_Store
+*.log
+*.gz
